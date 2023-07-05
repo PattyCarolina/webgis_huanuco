@@ -37,7 +37,8 @@ var huanuco = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/wm
 huanuco.addTo(map);
 
 var provincias = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/wms?", {
-    layers: "webgis_huanuco:provincias_huanuco", 
+    layers: "webgis_huanuco:provincias", 
+    format: 'image/png',
    transparent: true,
    version: '1.1.1',
     attribution: "SENCICO"
@@ -45,7 +46,8 @@ var provincias = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco
 provincias.addTo(map);
 
 var distritos = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/wms?", {
-    layers: "webgis_huanuco:distritos_huanuco", 
+    layers: "webgis_huanuco:distritos", 
+    format: 'image/png',
    transparent: true,
    version: '1.1.1',
     attribution: "SENCICO"
@@ -71,7 +73,8 @@ var colegios = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/w
 colegios.addTo(map);
 
 var estacionamientos = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/wms?", {
-    layers: "webgis_huanuco:estacionamientos", 
+    layers: "webgis_huanuco:estacionamientos",
+    format: 'image/png',
    transparent: true,
    version: '1.1.1',
     attribution: "SENCICO"
@@ -89,6 +92,7 @@ farmacias.addTo(map);
 
 var hoteles = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_huanuco/wms?", {
     layers: "webgis_huanuco:hoteles", 
+    format: 'image/png',
    transparent: true,
    version: '1.1.1',
     attribution: "SENCICO"
